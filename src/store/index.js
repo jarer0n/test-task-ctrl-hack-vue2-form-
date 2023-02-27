@@ -35,7 +35,7 @@ export default new Vuex.Store({
             } else {
                 alert('Отказано в сохранение');
                 state.logs.unshift(
-                    `Отказано в сохранение, amount не четное число: ${this.form.amount} `
+                    `Отказано в сохранение, amount не четное число: ${state.form.amount} `
                 );
             }
         },

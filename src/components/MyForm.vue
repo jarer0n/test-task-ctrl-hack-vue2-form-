@@ -3,19 +3,19 @@
         <div class="flex">
             <input
                 @input="calculate($event, 'ЦЕНА')"
-                v-model="form.price"
+                v-model.number="form.price"
                 placeholder="Цена"
                 type="number"
             />
             <input
                 @input="calculate($event, 'КОЛ-ВО')"
-                v-model="form.qty"
+                v-model.number="form.qty"
                 placeholder="Кол-во"
                 type="number"
             />
             <input
                 @input="calculate($event, 'СУММА')"
-                v-model="form.amount"
+                v-model.number="form.amount"
                 placeholder="Сумма"
                 type="number"
             />
